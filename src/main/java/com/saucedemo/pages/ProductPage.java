@@ -15,8 +15,6 @@ import java.util.List;
 
 public class ProductPage extends Utility {
 
-    static List<String> items = new ArrayList<>();
-
     /**
      * logger defined to print log
      */
@@ -30,63 +28,31 @@ public class ProductPage extends Utility {
     @FindBy(xpath = "//select[@class='product_sort_container']")
     WebElement dropDown;
 
-
-    @FindBy(className = "inventory_item_name")
-    List<WebElement> allProducts;
-
-    @CacheLookup
-    @FindBy(xpath = "(//button[normalize-space()='Add to cart'])[1]")
-    WebElement addToCart;
-
-    @CacheLookup
-    @FindBy(id = "back-to-products")
-    WebElement backToProducts;
+    @FindBy(xpath = "//button[@class='btn btn_primary btn_small btn_inventory']")
+    List<WebElement> products;
 
     @CacheLookup
     @FindBy(xpath = "//a[@class='shopping_cart_link']")
     WebElement cart;
 
-
-
     public void selectOptionFromDropdown(String visibleText) {
         doSelectByVisibleTextFromDropDown(dropDown, visibleText);
     }
 
-    public void selectCostliestProductAndAddToTheBasket(String visibleText) {
+    public void selectCostliestProductAndAddToTheBasket() throws InterruptedException {
 
-        for (WebElement product : allProducts) {
-            items.add(product.getText());
-        }
-        for (WebElement products : allProducts) {
-            if (products.getText().equalsIgnoreCase(items.get(0))) {
-                doClickOnElement(products);
-                doClickOnElement(addToCart);
-                break;
-            }
-        }
-        doClickOnElement(backToProducts);
-        doSelectByVisibleTextFromDropDown(dropDown, visibleText);
-    }
-
-    public void selectCheapestProductAndAddToTheBasket(String visibleText) {
-
-        for (WebElement product : allProducts) {
-            items.add(product.getText());
-        }
-        for (WebElement products : allProducts) {
-            if (products.getText().equalsIgnoreCase(items.get(5))) {
-                doClickOnElement(products);
-                doClickOnElement(addToCart);
-                break;
+        for (int i = 0; i < products.size(); i++) {
+            if (i == 0 || i == products.size() - 1) {
+                log.info("Adding product to the cart: " + products.get(i).toString());
+                Thread.sleep(1000);
+                doClickOnElement(products.get(i));
             }
         }
     }
 
-    public void openShoppingCart(){
+    public void openShoppingCart() {
         doClickOnElement(cart);
     }
-
-
 }
 
 

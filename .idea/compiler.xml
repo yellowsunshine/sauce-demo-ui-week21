@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="saucedemo-ui-selenium-bdd" />
+        <module name="sauce-demo-ui-week21" />
       </profile>
     </annotationProcessing>
   </component>

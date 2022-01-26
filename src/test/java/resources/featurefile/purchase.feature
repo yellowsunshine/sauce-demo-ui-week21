@@ -6,7 +6,7 @@ Feature: Search functionality
     When I login with credential username "standard_user" and password "secret_sauce"
     And I click on Login button
     And I filter the products by Price "Price (high to low)"
-    And I select cheapest & costliest products and add to basket "Price (high to low)"
+    And I select cheapest & costliest products and add to basket
     And I open shopping cart
     And I go to checkout
     And I enter details firstname "Tom", lastName "Cat" and zipPostalCode "HA8 7UU"

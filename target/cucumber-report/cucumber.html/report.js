@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 5099483100,
+  "duration": 11264305600,
   "status": "passed"
 });
 formatter.scenario({
@@ -40,7 +40,7 @@ formatter.step({
 });
 formatter.step({
   "line": 9,
-  "name": "I select cheapest \u0026 costliest products and add to basket \"Price (high to low)\"",
+  "name": "I select cheapest \u0026 costliest products and add to basket",
   "keyword": "And "
 });
 formatter.step({
@@ -77,7 +77,7 @@ formatter.match({
   "location": "PurchaseSteps.iAmOnSauceDemoPage()"
 });
 formatter.result({
-  "duration": 201897200,
+  "duration": 257791500,
   "status": "passed"
 });
 formatter.match({
@@ -94,14 +94,14 @@ formatter.match({
   "location": "PurchaseSteps.iLoginWithCredentialUsernameAndPassword(String,String)"
 });
 formatter.result({
-  "duration": 241644900,
+  "duration": 608583400,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.iClickOnLoginButton()"
 });
 formatter.result({
-  "duration": 132074100,
+  "duration": 377100100,
   "status": "passed"
 });
 formatter.match({
@@ -114,34 +114,28 @@ formatter.match({
   "location": "PurchaseSteps.iFilterTheProductsByPrice(String)"
 });
 formatter.result({
-  "duration": 467400800,
+  "duration": 733243400,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Price (high to low)",
-      "offset": 58
-    }
-  ],
-  "location": "PurchaseSteps.iSelectCheapestCostliestProductsAndAddToBasket(String)"
+  "location": "PurchaseSteps.iSelectCheapestCostliestProductsAndAddToBasket()"
 });
 formatter.result({
-  "duration": 928294200,
+  "duration": 2710608400,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.iOpenShoppingCart()"
 });
 formatter.result({
-  "duration": 66121300,
+  "duration": 314374400,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.iGoToCheckout()"
 });
 formatter.result({
-  "duration": 66622400,
+  "duration": 722786400,
   "status": "passed"
 });
 formatter.match({
@@ -162,21 +156,21 @@ formatter.match({
   "location": "PurchaseSteps.iEnterDetailsFirstnameLastNameAndZipPostalCode(String,String,String)"
 });
 formatter.result({
-  "duration": 228580200,
+  "duration": 679855300,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.iClickOnContinueButton()"
 });
 formatter.result({
-  "duration": 66058600,
+  "duration": 147072100,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.iClickOnFinishButton()"
 });
 formatter.result({
-  "duration": 62107800,
+  "duration": 135041700,
   "status": "passed"
 });
 formatter.match({
@@ -189,11 +183,11 @@ formatter.match({
   "location": "PurchaseSteps.iShouldBeAbleToSeeMessage(String)"
 });
 formatter.result({
-  "duration": 30093300,
+  "duration": 88787800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 109300,
+  "duration": 173100,
   "status": "passed"
 });
 });

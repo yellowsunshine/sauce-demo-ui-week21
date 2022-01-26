@@ -36,3 +36,15 @@
 2022-01-25 15:01:760 INFO  ManageDriver :31 - Launching Chrome Browser
 2022-01-25 15:01:370 INFO  ManageDriver :31 - Launching Chrome Browser
 2022-01-25 15:01:07 INFO  ManageDriver :31 - Launching Chrome Browser
+2022-01-26 10:01:14 INFO  ManageDriver :31 - Launching Chrome Browser
+2022-01-26 10:01:499 INFO  ManageDriver :31 - Launching Chrome Browser
+2022-01-26 10:01:221 INFO  ManageDriver :31 - Launching Chrome Browser
+2022-01-26 10:01:950 INFO  ManageDriver :31 - Launching Chrome Browser
+2022-01-26 10:01:671 INFO  ManageDriver :31 - Launching Chrome Browser
+2022-01-26 10:01:298 INFO  ManageDriver :31 - Launching Chrome Browser
+2022-01-26 10:01:440 INFO  ManageDriver :31 - Launching Chrome Browser
+2022-01-26 10:01:387 INFO  ManageDriver :31 - Launching Chrome Browser
+2022-01-26 10:01:482 INFO  ManageDriver :31 - Launching Chrome Browser
+2022-01-26 10:01:444 INFO  ManageDriver :31 - Launching Chrome Browser
+2022-01-26 10:01:819 INFO  ProductPage :62 - Adding product to the cart: [[ChromeDriver: chrome on WINDOWS (5aceda1416e74ec982a7713f0f1f08ce)] -> xpath: //button[@class='btn btn_primary btn_small btn_inventory']]
+2022-01-26 10:01:60 INFO  ProductPage :62 - Adding product to the cart: [[ChromeDriver: chrome on WINDOWS (5aceda1416e74ec982a7713f0f1f08ce)] -> xpath: //button[@class='btn btn_primary btn_small btn_inventory']]

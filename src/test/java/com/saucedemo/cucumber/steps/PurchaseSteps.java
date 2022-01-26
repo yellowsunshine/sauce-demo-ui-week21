@@ -4,7 +4,7 @@ import com.saucedemo.pages.CheckoutPage;
 import com.saucedemo.pages.LoginPage;
 import com.saucedemo.pages.ProductPage;
 import com.saucedemo.pages.YourCartPage;
-import cucumber.api.PendingException;
+
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -30,10 +30,9 @@ public class PurchaseSteps {
         new ProductPage().selectOptionFromDropdown(priceFilter);
     }
 
-    @And("^I select cheapest & costliest products and add to basket \"([^\"]*)\"$")
-    public void iSelectCheapestCostliestProductsAndAddToBasket(String selection)  {
-        new ProductPage().selectCostliestProductAndAddToTheBasket(selection);
-        new ProductPage().selectCheapestProductAndAddToTheBasket(selection);
+    @And("^I select cheapest & costliest products and add to basket$")
+    public void iSelectCheapestCostliestProductsAndAddToBasket() throws InterruptedException {
+        new ProductPage().selectCostliestProductAndAddToTheBasket();
     }
 
     @And("^I open shopping cart$")
@@ -65,4 +64,7 @@ public class PurchaseSteps {
     public void iShouldBeAbleToSeeMessage(String expectedMessage) {
         new CheckoutPage().verifyMessage(expectedMessage);
     }
+
+
+
 }
